@@ -23,16 +23,29 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "xshare.h"
+#ifndef XSHARE_SENDER_H
+#define XSHARE_SENDER_H
 
-using namespace xshare;
+namespace xshare {
 
-Xshare::Xshare()
+/**
+ * @todo write docs
+ */
+class Sender
 {
+public:
+    /**
+     * Default constructor
+     */
+    Sender();
+
+    /**
+     * Destructor
+     */
+    ~Sender();
+
+};
 
 }
 
-Xshare::~Xshare()
-{
-
-}
+#endif // XSHARE_SENDER_H

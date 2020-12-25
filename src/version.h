@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 KrivArt <email>
+ * Copyright (c) 2020 Noah Too <krivahtoo@gmail.com>
  * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,16 +23,20 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "xshare.h"
+#ifndef VERSION_H
+#define VERSION_H
 
-using namespace xshare;
+#include <iostream>
 
-Xshare::Xshare()
-{
+#define VERSION_MAJOR "0"
+#define VERSION_MINOR "1"
+#define VERSION_PATCH "0"
 
+std::string get_version() {
+    return VERSION_MAJOR + "." + VERSION_MINOR + "." + VERSION_PATCH ;
 }
 
-Xshare::~Xshare()
-{
 
-}
+#define VERSION get_version()
+
+#endif // VERSION_H

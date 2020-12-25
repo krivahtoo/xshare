@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 KrivArt <email>
+ * Copyright (c) 2020 Noah Too <krivahtoo@gmail.com>
  * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,16 +23,29 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "xshare.h"
+#ifndef XSHARE_RECEIVER_H
+#define XSHARE_RECEIVER_H
 
-using namespace xshare;
+namespace xshare {
 
-Xshare::Xshare()
+/**
+ * @todo write docs
+ */
+class Receiver
 {
+public:
+    /**
+     * Default constructor
+     */
+    Receiver();
+
+    /**
+     * Destructor
+     */
+    ~Receiver();
+
+};
 
 }
 
-Xshare::~Xshare()
-{
-
-}
+#endif // XSHARE_RECEIVER_H

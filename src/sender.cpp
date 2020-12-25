@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 KrivArt <email>
+ * Copyright (c) 2020 Noah Too <krivahtoo@gmail.com>
  * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,16 +23,16 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "xshare.h"
+#include "sender.h"
 
 using namespace xshare;
 
-Xshare::Xshare()
+Sender::Sender()
 {
 
 }
 
-Xshare::~Xshare()
+Sender::~Sender()
 {
 
 }

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>xShare</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabOngoing">
+       <attribute name="title">
+        <string>Ongoing</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabReceived">
+       <attribute name="title">
+        <string>Received</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout"/>
+      </widget>
+      <widget class="QWidget" name="tabSent">
+       <attribute name="title">
+        <string>Sent</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3"/>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="hzlReceiveSend">
+      <item>
+       <widget class="QPushButton" name="btnReceive">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Receive</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="hspReceiveSend">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSend">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Send</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>388</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actSend"/>
+    <addaction name="actReceive"/>
+    <addaction name="actHistory"/>
+    <addaction name="separator"/>
+    <addaction name="actQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actAbout"/>
+    <addaction name="actAbout_Qt"/>
+    <addaction name="separator"/>
+    <addaction name="actCheck_for_Updates"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actSend">
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actHistory">
+   <property name="text">
+    <string>History</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actReceive">
+   <property name="text">
+    <string>Receive</string>
+   </property>
+  </action>
+  <action name="actAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actCheck_for_Updates">
+   <property name="text">
+    <string>Check for Updates</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

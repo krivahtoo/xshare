@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2014, 2015, 2016, 2017 Jarryd Beck
  *
- * Copyright (c) 2020 Noah Too <krivahtoo@gmail.com>
+ * Copyright (c) 2020 Noah Too
  * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
